@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -57,7 +56,8 @@ class SecondRoute extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            Navigator.pop(context, MaterialPageRoute(builder: (context) => const FirstRoute()));
+            Navigator.pop(context,
+                MaterialPageRoute(builder: (context) => const FirstRoute()));
           },
           child: const Text('Go back!'),
         ),
